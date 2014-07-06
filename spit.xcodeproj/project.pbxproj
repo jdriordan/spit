@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D5C9323196986AB0051A50D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9322196986AB0051A50D /* main.c */; };
 		2D5C9325196986AB0051A50D /* spit.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D5C9324196986AB0051A50D /* spit.1 */; };
+		2D5C932C19698F560051A50D /* vec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C932B19698F560051A50D /* vec.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		2D5C931F196986AB0051A50D /* spit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = spit; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5C9322196986AB0051A50D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2D5C9324196986AB0051A50D /* spit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = spit.1; sourceTree = "<group>"; };
+		2D5C932B19698F560051A50D /* vec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec.c; sourceTree = "<group>"; };
+		2D5C932D19698F6C0051A50D /* vec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				2D5C9322196986AB0051A50D /* main.c */,
+				2D5C932B19698F560051A50D /* vec.c */,
+				2D5C932D19698F6C0051A50D /* vec.h */,
 				2D5C9324196986AB0051A50D /* spit.1 */,
 			);
 			path = spit;
@@ -117,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5C932C19698F560051A50D /* vec.c in Sources */,
 				2D5C9323196986AB0051A50D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +203,11 @@
 		2D5C9329196986AB0051A50D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +215,11 @@
 		2D5C932A196986AB0051A50D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
